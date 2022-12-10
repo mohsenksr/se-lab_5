@@ -6,7 +6,7 @@ public class BuildingCache {
 
     private static Hashtable<String, Building> buildingMap = new Hashtable<String, Building>();
 
-    public static Building getShape(String shapeId) {
+    public static Building getBuilding(String shapeId) {
         Building cachedBuilding = buildingMap.get(shapeId);
         return (Building) cachedBuilding.clone();
     }
